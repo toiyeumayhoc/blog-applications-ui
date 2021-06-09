@@ -1,0 +1,107 @@
+
+:root {
+    --dark : #050517;
+    --dark-light : #CF5C36;
+    --normal : #EFC88B;
+    --light: #F4E3B2;
+    --super-light : #D3D5D7;
+}
+
+* {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color : var(--dark-light);
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 40px;
+}
+
+.description {
+    color : var(--dark);
+    text-align: center;
+    font-style: italic;
+    width: 70vw;
+    margin: auto;
+}
+
+.applications {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.item {
+    box-shadow: 2px 3px 7px;
+    border-radius: 10px;
+    margin: 20px 20px 0px 20px;
+}
+
+.app-item {
+    width: 300px;    
+    transition: 0.3s ease-out;
+    margin: 10px 10px;
+}
+
+.app-item:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.application {
+    background-color: var(--super-light);
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.app-name {
+    padding: 10px 5px;
+    color: var(--dark-light);
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.app-description {
+    color : var(--dark);
+    padding: 0px 5px;
+    margin-bottom: 5px;
+    text-align: justify;
+    font-style: italic;
+    height: 100px;
+}
+
+.read {
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid var(--dark);
+    font-weight: 600;
+    width: 120px;
+    margin-left: calc(50% - 60px);
+    transition: 0.2s;
+    margin-bottom: 10px;
+    
+}
+
+.read a {
+    text-decoration: none;
+    color : var(--dark);
+}
+
+.read:hover {
+   background-color: var(--normal);
+   transform: scale(1.1);
+   cursor: pointer;
+}
